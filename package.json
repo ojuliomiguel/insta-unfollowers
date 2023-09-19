@@ -1,0 +1,17 @@
+{
+  "name": "insta-unfollowers",
+  "module": "app.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/App.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^21.1.1"
+  }
+}
