@@ -2,10 +2,10 @@ import puppeteer, { Page } from 'puppeteer';
 
 class Browser {
 
-  async page(): Promise<Page> {
+  async page(url: string): Promise<Page> {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
-    await page.goto('https://www.instagram.com/');
+    await page.goto(url);
     return page;
   }
 
